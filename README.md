@@ -1,3 +1,5 @@
+cloned from https://github.com/EZLippi/Tinyhttpd.git
+
 A mirror for tinyhttpd
 测试CGI时需要本机安装PERL，同时安装perl-cgi
 
