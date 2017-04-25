@@ -74,6 +74,14 @@ void accept_request(void *arg)
     char path[512];
     size_t i, j;
     struct stat st;
+    /*
+	  struct stat {
+		mode_t st_mode;  // 文件对应的模式、文件、目录等
+		ino_t st_ino;		// inode 节点号
+		dev_t st_dev;		// 设备号码
+		dev_t st_rdev;		// 特殊设备号码
+	  };
+    */
     int cgi = 0;      /* becomes true if server decides this is a CGI
                        * program */
     char *query_string = NULL;
